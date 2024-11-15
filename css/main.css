@@ -2,8 +2,75 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html, body {
   font-family: Poppins;
+}
+
+#wrapper {
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  padding: 2rem 0;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+header form.searchbar {
+  display: flex;
+  width: 70%;
+}
+header form.searchbar input[type=text] {
+  width: 100%;
+  background: none;
+  border: 1px solid #272727;
+  border-right: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+header form.searchbar button.search_btn {
+  background: none;
+  border: 1px solid #272727;
+  border-left: none;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+header nav.main_nav {
+  margin: 1rem 0;
+}
+header nav.main_nav ul {
+  list-style: none;
+  text-align: center;
+}
+header nav.main_nav ul a.logo {
+  text-decoration: none;
+  padding: 1rem 0;
+  display: block;
+}
+header nav.main_nav ul a.logo span.logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: #272727;
+}
+header nav.main_nav ul li {
+  padding: 5px 0;
+}
+header nav.main_nav ul li a {
+  color: #272727;
+  font-weight: 500;
+  text-decoration: none;
+}
+header nav.header_icons a {
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */

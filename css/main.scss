@@ -1,19 +1,110 @@
 
-// ----------------------------
-//      Font
-// ----------------------------
+@use 'variables';
+@use 'mixins';
+@use 'base';
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// ----------------------------
+// --------------------------------
 //      Global
-// ----------------------------
+// --------------------------------
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html, body {
-    font-family: Poppins;
+    font-family: variables.$global_font;
+}
+
+// --------------------------------
+//      Wrapper
+// --------------------------------
+
+#wrapper {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 2rem 0;
+}
+
+// --------------------------------
+//      Header
+// --------------------------------
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    // Søkebar
+    form.searchbar {
+        display: flex;
+        width: 70%;
+        
+        input[type=text] {
+            width: 100%;
+            background: none;
+            border: 1px solid variables.$text_black;
+            border-right: none;
+            outline: none;
+            padding: 1rem;
+            border-radius: 25px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        button.search_btn {
+            background: none;
+            border: 1px solid variables.$text_black;
+            border-left: none;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 25px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    // Navigasjonen
+    nav.main_nav {
+        margin: 1rem 0;
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            a.logo {
+                text-decoration: none;
+                padding: 1rem 0;
+                display: block;
+
+                span.logo {
+                    font-size: 40px;
+                    font-weight: 800;
+                    color: variables.$text_black;
+                }
+            }
+
+            li {
+                padding: 5px 0;
+                
+                a {
+                    color: variables.$text_black;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    // Ikoner i header
+    nav.header_icons {
+        
+        a {
+            font-size: 20px;
+        }
+    }
+
 }
