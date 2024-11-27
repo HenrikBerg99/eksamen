@@ -25,18 +25,20 @@
                         <li><a href="#">Kontakt oss</a></li>
                     </ul>
                 </nav>
-                <nav class="header_icons">
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
-                </nav>
+                <ul class="header_icons">
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                </il>
             </header>
         
             <main>
 
                 <section class="banner_slider">
-                    <article class="banner">
-                        <h1>Retro chambray humblebrag twee deep v lumbersexual pok pok. Schlitz raw denim mixtape synth.</h1>
+                    <article class="slide">
+                        <h1>Retro chambray humblebrag twee deep v.</h1>
+                        <p>Hella jawn trust fund hexagon yes plz cliche irony cred organic direct trade ennui air plant bespoke tbh helvetica. Farm-to-table mumblecore craft beer fixie tbh.</p>
+                        <button class="slider_btn">Les mer</button>
                     </article>
                 </section>
 
@@ -44,11 +46,11 @@
                     <article class="pop_products_header">
                         <h1>Våre mest populære produkter</h1>
                         <p>Oppdag det beste av det beste</p>
-                        <span class="category">
+                        <nav class="category">
                             <button class="cat_btn">New Products</button>
                             <button class="cat_btn">Special Price</button>
                             <button class="cat_btn">Best sellers</button>
-                        </span>
+                        </nav>
                     </article>
                     
                     <section class="products_container">
@@ -59,18 +61,18 @@
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
                                 <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
                             </picture>
-                            <span class="product_info">
+                            <article class="product_info">
                                 <h3>Coca-cola Zero</h3>
                                 <p>1 999kr</p>
-                            </span>
-                            <span class="product_rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <p>436 Reviews</p>
-                            </span>
+                            </article>
+                            <ul class="product_rating">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><p>436 Reviews</p></li>
+                            </ul>
                         </article>
     
                     </section>
@@ -78,17 +80,73 @@
                 </section>
 
                 <section class="popular_categories">
-
+                    <article class="cat_container" id="cat1">
+                        <h3>Category 1</h3>
+                    </article>
+                    <article class="cat_container" id="cat2">
+                        <h3>Category 2</h3>
+                    </article>
+                    <article class="cat_container" id="cat3">
+                        <h3>Category 3</h3>
+                    </article>
+                    <article class="cat_container" id="cat4">
+                        <h3>Category 4</h3>
+                    </article>
+                    <article class="cat_container" id="cat5">
+                        <h3>Category 5</h3>
+                    </article>
                 </section>
 
                 <section class="reviews">
-                    
+                    <article class="review_container">
+                        <img src="images/profile_image.jpg" alt="">
+                        <h3>Ola Nordman</h3>
+                        <ul class="stars">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
+                    </article>
                 </section>
                 
             </main>
         
             <footer class="main_footer">
-                
+                <h1 class="footer_logo"></h1>
+                <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard.</p>
+                <section class="footer_info">
+                    <article class="contact">
+                        <h2>Kontakt</h2>
+                        <ul class="contact_info">
+                            <li><i class="fa-solid fa-location-dot"></i><b>Adresse: </b>B R A Veien 4, 1757 Halden</li>
+                            <li><i class="fa-solid fa-phone"></i><b>Telefon: </b>69 60 80 00</li>
+                            <li><i class="fa-solid fa-envelope"></i><b>E-post: </b>halden@hoif.no</li>
+                            <li><i class="fa-solid fa-clock"></i><b>Åpningstider: </b>Stenger 15:00</li>
+                        </ul>
+                    </article>
+                    <article class="shortcuts">
+                        <h2>Snarveier</h2>
+                        <nav>
+                            <ul class="footer_links">
+                                <li><a href="#"></a>Produkter</li>
+                                <li><a href="#"></a>Kategorier</li>
+                                <li><a href="#"></a>Kontakt Oss</li>
+                            </ul>
+                        </nav>
+                    </article>
+                    <article class="soc_media">
+                        <h2>Sosiale medier</h2>
+                        <nav class="icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </nav>
+                    </article>
+                </section>
             </footer>
         
         </div>

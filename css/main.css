@@ -9,6 +9,10 @@ html, body {
   font-family: Poppins;
 }
 
+ul {
+  list-style: none;
+}
+
 #wrapper {
   width: 90%;
   height: auto;
