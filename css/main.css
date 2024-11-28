@@ -75,6 +75,115 @@ header nav.main_nav ul li a {
   font-weight: 500;
   text-decoration: none;
 }
-header nav.header_icons a {
+header nav.main_nav ul li a:hover {
+  opacity: 0.8;
+  transition: 0.1s all ease;
+}
+header nav.header_icons {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+}
+header nav.header_icons i, header nav.header_icons a {
+  color: #272727;
   font-size: 20px;
+}
+header nav.header_icons a:hover {
+  transform: scale(1.15);
+  transition: 0.1s all ease;
+}
+
+section.popular_products {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+section.popular_products article.pop_products_header {
+  text-align: center;
+}
+section.popular_products article.pop_products_header h1 {
+  font-size: 36px;
+  color: #272727;
+}
+section.popular_products article.pop_products_header p {
+  font-family: Arial;
+  padding: 2rem 0;
+}
+section.popular_products article.pop_products_header nav.category {
+  padding-bottom: 2rem;
+}
+section.popular_products article.pop_products_header nav.category button.cat_btn {
+  padding: 20px;
+  border-radius: 2rem;
+  background-color: Transparent;
+  color: #272727;
+  border: 1px solid #272727;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 600;
+  cursor: pointer;
+}
+section.popular_products article.pop_products_header nav.category #selected {
+  background-color: #272727;
+  color: #eeeeee;
+}
+section.popular_products .products_container {
+  display: flex;
+  flex-flow: column;
+}
+section.popular_products .products_container article.product {
+  width: 100%;
+}
+section.popular_products .products_container article.product picture {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+section.popular_products .products_container article.product picture img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+section.popular_products .products_container article.product picture .like_btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #eeeeee;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 20px;
+  background-color: #9f9f9f;
+}
+
+section.popular_categories {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+section.popular_categories .pop_cat_header {
+  text-align: center;
+}
+section.popular_categories .pop_cat_header h1 {
+  font-size: 36px;
+  color: #272727;
+}
+section.popular_categories .pop_cat_header p {
+  font-family: Arial;
+  padding: 2rem 0;
+}
+
+section.reviews {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+section.reviews h1 {
+  font-size: 36px;
+  color: #272727;
 }/*# sourceMappingURL=main.css.map */

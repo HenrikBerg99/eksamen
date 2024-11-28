@@ -1,0 +1,65 @@
+
+@use 'variables';
+
+// -----------------------------------------
+//      Layout
+// -----------------------------------------
+
+@mixin section_setup() {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+
+@mixin general_wrap($gap) {
+    display: flex;
+    flex-flow: wrap;
+    gap: $gap;
+}
+
+@mixin icons_wrap($gap, $font_size) {
+    display: flex;
+    flex-flow: wrap;
+    gap: $gap;
+
+    i, a {
+        color: variables.$text_black;
+        font-size: $font_size;
+    }
+}
+
+// -----------------------------------------
+//      Generel stil
+// -----------------------------------------
+
+
+@mixin header_style() {
+    font-size: 36px;
+    color: variables.$text_black;
+}
+
+@mixin button_style($bg_color, $color, $border) {
+    padding: 20px;
+    border-radius: variables.$global_radius;
+    background-color: $bg_color;
+    color: $color;
+    border: $border;
+    font-size: 14px;
+    font-family: variables.$filler_font;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+// -----------------------------------------
+//      Hover effects
+// -----------------------------------------
+
+@mixin hover_opacity() {
+    opacity: .8;
+    transition: .1s all ease;
+}
+
+@mixin hover_zoom() {
+    transform: scale(1.15);
+    transition: .1s all ease;
+}
