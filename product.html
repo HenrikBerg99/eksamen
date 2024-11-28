@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/regular.css">
+    <link rel="stylesheet" href="ikoner/css/fontawesome.css">
+    <link rel="stylesheet" href="ikoner/css/brands.css">
+    <title>Hjem</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <form class="searchbar">
+                <input type="text" name="product_search" placeholder="Søk i produkter..">
+                <button type="submit" class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="product.html">Produkter</a></li>
+                    <a class="logo" href="index.html"><span class="logo">Logo</span></a>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <nav class="header_icons">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header>
+
+        <main class="product_main">
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumbs">
+                    <li class="item"><a href="index.html">Hjem</a><i class="fa-solid fa-angle-right"></i></li>
+                    <li class="item"><a href="#">Kategori</a><i class="fa-solid fa-angle-right"></i></li>
+                    <li class="item"><a href="#"><b>Coca Cola Zero</b></a></li>
+                </ul>
+            </nav>
+
+            <section class="product_container">
+                <article class="product_image_grid">
+                    <picture id="img1">
+                        <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                        <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                        <img src="images/product_img_small.jpg" alt="Produktbilde">
+                    </picture>
+                    <picture id="img2">
+                        <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                        <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                        <img src="images/product_img_small.jpg" alt="Produktbilde">
+                    </picture>
+                    <picture id="img3">
+                        <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                        <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                        <img src="images/product_img_small.jpg" alt="Produktbilde">
+                    </picture>
+                    <picture id="img4">
+                        <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                        <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                        <img src="images/product_img_small.jpg" alt="Produktbilde">
+                    </picture>
+                </article>
+                <article class="product_info">
+                    <h2 class="product_title">Produktnavn</h2>
+                    <a class="product_brand" href="#">Merkenavn</a>
+                    <p class="product_price">1 999 Kr inkl .mva.</p>
+                    <p class="product_color">Farge: <b>Rød</b></p>
+
+                    <form class="user_options">
+                        <select>
+                            <option disabled selected>Velg en størelse</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <button class="add_to_cart">Legg i handlekurv</button>
+                        <button class="add_to_favorites"><i class="fa-regular fa-heart"></i></button>
+                    </form>
+                    <article class="details">
+                        <details>
+                            <summary><b>Matriale og vedlikehold</b><i class="fa-solid fa-plus"></i></summary>
+                            <article class="content">
+                                <ul>
+                                    <li>Overmateriale: 95% viskose, 5% elastan</li>
+                                    <li>Materiale ermer: 100% polyester</li>
+                                    <li>Materiale: Jersy</li>
+                                </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary><b>Produktdetaljer</b><i class="fa-solid fa-plus"></i></summary>
+                            <article class="content">
+                                <p>Knausgaard gentrify truffaut portland yes plz migas. Tonx umami flexitarian kickstarter stumptown thundercats messenger bag pinterest pickled skateboard locavore echo park yuccie tilde.</p>
+                            </article>
+                        </details>
+                        <details>
+                            <summary><b>Størrelsetabel</b><i class="fa-solid fa-plus"></i></summary>
+                            <article class="content">
+                                <p>Knausgaard gentrify truffaut portland yes plz migas. Tonx umami flexitarian kickstarter stumptown thundercats messenger bag pinterest pickled skateboard locavore echo park yuccie tilde.</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>EU</th>
+                                            <th>INT</th>
+                                            <th>BRYSTVIDDE</th>
+                                            <th>LIVVIDDE</th>
+                                            <th>HOFTEMÅL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>32</td>
+                                            <td>XXS</td>
+                                            <td>76</td>
+                                            <td>63</td>
+                                            <td>85</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34</td>
+                                            <td>XS</td>
+                                            <td>80</td>
+                                            <td>66</td>
+                                            <td>89</td>
+                                        </tr>
+                                        <tr>
+                                            <td>36</td>
+                                            <td>S</td>
+                                            <td>84</td>
+                                            <td>69</td>
+                                            <td>93</td>
+                                        </tr>
+                                        <tr>
+                                            <td>38</td>
+                                            <td>M</td>
+                                            <td>88</td>
+                                            <td>72</td>
+                                            <td>97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40</td>
+                                            <td>L</td>
+                                            <td>92</td>
+                                            <td>76</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>42</td>
+                                            <td>XL</td>
+                                            <td>96</td>
+                                            <td>80</td>
+                                            <td>103</td>
+                                        </tr>
+                                        <tr>
+                                            <td>44</td>
+                                            <td>XXL</td>
+                                            <td>100</td>
+                                            <td>85</td>
+                                            <td>106</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>
+                                <b>Anmeldelser</b>
+                                <article class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p>32</p>
+                                </article>
+                            </summary>
+                            <article class="content reviews">
+                                <p class="name">Ola nordman</p>
+                                <p class="date">2024-10-02</p>
+                                <article class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </article>
+                                <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism.</p>
+                            </article>
+                        </details>
+                    </article>
+                </article>
+            </section>
+
+            <section class="similar_products">
+                <h1>Lignende produkter</h1>
+                <a href=""></a>
+                <section class="products">
+                    <article class="product">
+                        <picture>
+                            <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                            <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                            <img src="images/product_img_small.jpg" alt="Produktbilde">
+                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                        </picture>
+                        <a href="product.html">
+                        <article class="product_info">
+                            <h3>Coca-cola Zero</h3>
+                            <p>Kr 1 999</p>
+                        </article>
+                        </a>
+                        <ul class="product_rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><p><b>436 Reviews</b></li>
+                        </ul>
+                    </article>
+                    <article class="product">
+                        <picture>
+                            <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                            <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                            <img src="images/product_img_small.jpg" alt="Produktbilde">
+                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                        </picture>
+                        <a href="product.html">
+                        <article class="product_info">
+                            <h3>Coca-cola Zero</h3>
+                            <p>Kr 1 999</p>
+                        </article>
+                        </a>
+                        <ul class="product_rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><p><b>436 Reviews</b></li>
+                        </ul>
+                    </article>
+                    <article class="product">
+                        <picture>
+                            <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                            <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                            <img src="images/product_img_small.jpg" alt="Produktbilde">
+                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                        </picture>
+                        <a href="product.html">
+                        <article class="product_info">
+                            <h3>Coca-cola Zero</h3>
+                            <p>Kr 1 999</p>
+                        </article>
+                        </a>
+                        <ul class="product_rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><p><b>436 Reviews</b></li>
+                        </ul>
+                    </article>
+                    <article class="product">
+                        <picture>
+                            <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                            <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                            <img src="images/product_img_small.jpg" alt="Produktbilde">
+                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                        </picture>
+                        <a href="product.html">
+                        <article class="product_info">
+                            <h3>Coca-cola Zero</h3>
+                            <p>Kr 1 999</p>
+                        </article>
+                        </a>
+                        <ul class="product_rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><p><b>436 Reviews</b></li>
+                        </ul>
+                    </article>
+                    <article class="product">
+                        <picture>
+                            <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                            <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                            <img src="images/product_img_small.jpg" alt="Produktbilde">
+                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                        </picture>
+                        <a href="product.html">
+                        <article class="product_info">
+                            <h3>Coca-cola Zero</h3>
+                            <p>Kr 1 999</p>
+                        </article>
+                        </a>
+                        <ul class="product_rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><p><b>436 Reviews</b></li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+
+        </main>
+
+        <footer>
+            <h1 class="footer_logo">Logo</h1>
+            <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard.</p>
+            <section class="footer_info">
+                <article class="sub_container">
+                    <h2>Kontakt</h2>
+                    <ul class="contact_info">
+                        <li><i class="fa-solid fa-location-dot"></i><b>Adresse: </b>B R A Veien 4, 1757 Halden</li>
+                        <li><i class="fa-solid fa-phone"></i><b>Telefon: </b>69 60 80 00</li>
+                        <li><i class="fa-solid fa-envelope"></i><b>E-post: </b>halden@hoif.no</li>
+                        <li><i class="fa-solid fa-clock"></i><b>Åpningstider: </b>Stenger 15:00</li>
+                    </ul>
+                </article>
+                <article class="sub_container">
+                    <h2>Snarveier</h2>
+                    <nav>
+                        <ul class="footer_links">
+                            <li><a href="#">Produkter</a></li>
+                            <li><a href="#">Kategorier</a></li>
+                            <li><a href="#">Kontakt Oss</a></li>
+                        </ul>
+                    </nav>
+                </article>
+                <article class="sub_container">
+                    <h2>Sosiale medier</h2>
+                    <nav class="soc_icons">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </nav>
+                </article>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

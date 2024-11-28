@@ -22,7 +22,7 @@
     flex-direction: wrap;
     gap: $gap;
 
-    i, a {
+    i, a, p {
         color: variables.$text_black;
         font-size: $font_size;
     }
@@ -34,7 +34,7 @@
 
 
 @mixin header_style() {
-    font-size: 36px;
+    font-size: 34px;
     color: variables.$text_black;
     padding-bottom: 2rem;
 }
