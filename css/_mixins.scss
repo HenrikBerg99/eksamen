@@ -36,7 +36,7 @@
 @mixin header_style() {
     font-size: 34px;
     color: variables.$text_black;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 @mixin button_style($bg_color, $color, $border) {
@@ -51,12 +51,64 @@
     cursor: pointer;
 }
 
+// Checkout
+@mixin checkout_card() {
+    padding: 2rem;
+    border: 1px solid variables.$text_white;
+    border-radius: variables.$global_radius;
+}
+
+@mixin form_checkout() {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+    fieldset {
+        border: none;
+        width: 100%;
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            outline: none;
+            border: 1px solid variables.$bg_gray;
+            font-family: variables.$global_font;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem 0;
+        border: none;
+        font-weight: 600;
+        background-color: variables.$text_black;
+        color: variables.$text_white;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .7;
+            transition: .1s all ease;
+        }
+    }
+
+    a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+
 // -----------------------------------------
 //      Hover effects
 // -----------------------------------------
 
 @mixin hover_opacity() {
-    opacity: .6;
+    opacity: .7;
     transition: .1s all ease;
 }
 
