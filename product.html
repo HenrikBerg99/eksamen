@@ -68,7 +68,7 @@
                 </article>
                 <article class="product_info" itemscope itemtype="http://schema.org/Product">
                     <h2 class="product_title" itemprop="name">Produktnavn</h2>
-                    <a itemprop="creator" itemscope itemtype="https://schema.org/Organization" class="product_brand" href="#">Merkenavn</a>
+                    <a itemscope itemtype="https://schema.org/Organization" itemprop="creator" class="product_brand" href="#">Merkenavn</a>
                     <p class="product_price" itemprop="price">1 999 Kr inkl .mva.</p>
                     <p class="product_color" itemprop="color">Farge: <b>Rød</b></p>
 
@@ -217,7 +217,7 @@
                             <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                        <ul class="product_rating" itemscope itemtype="http://schema.org/Review" aria-label="Product rating">
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
@@ -239,13 +239,13 @@
                             <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                        <ul class="product_rating" itemscope itemtype="http://schema.org/Review" aria-label="Product rating">
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
+                            <li><p><b>436 Reviews</b></li>
                         </ul>
                     </article>
                     <article class="product" itemscope itemtype="http://schema.org/Product">
@@ -261,13 +261,13 @@
                             <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                        <ul class="product_rating" itemscope itemtype="http://schema.org/Review" aria-label="Product rating">
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
+                            <li><p><b>436 Reviews</b></li>
                         </ul>
                     </article>
                     <article class="product" itemscope itemtype="http://schema.org/Product">
@@ -283,13 +283,13 @@
                             <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                        <ul class="product_rating" itemscope itemtype="http://schema.org/Review" aria-label="Product rating">
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
+                            <li><p><b>436 Reviews</b></li>
                         </ul>
                     </article>
                     <article class="product" itemscope itemtype="http://schema.org/Product">
@@ -305,13 +305,35 @@
                             <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                        <ul class="product_rating" itemscope itemtype="http://schema.org/Review" aria-label="Product rating">
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
                             <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
-                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
+                            <li><p><b>436 Reviews</b></li>
+                        </ul>
+                    </article>
+                    <article class="product" itemscope itemtype="http://schema.org/Product">
+                        <picture>
+                            <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                            <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                            <img src="images/product_img_small.jpg" alt="Produktbilde">
+                            <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
+                        </picture>
+                        <a href="product.html">
+                        <article class="product_info">
+                            <h3 itemprop="name">Produktnavn</h3>
+                            <p itemprop="price">Kr 1 999</p>
+                        </article>
+                        </a>
+                        <ul class="product_rating" itemscope itemtype="http://schema.org/Review" aria-label="Product rating">
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                            <li><p><b>436 Reviews</b></li>
                         </ul>
                     </article>
                 </section>
