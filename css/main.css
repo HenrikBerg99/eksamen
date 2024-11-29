@@ -62,15 +62,19 @@ header nav.main_nav ul {
   display: flex;
   flex-flow: column;
 }
-header nav.main_nav ul a.logo {
+header nav.main_nav ul li.logo {
+  text-decoration: none;
+}
+header nav.main_nav ul li.logo a.logo {
   text-decoration: none;
   padding: 1rem 0;
   display: block;
-}
-header nav.main_nav ul a.logo span.logo {
   font-size: 40px;
   font-weight: 800;
   color: #272727;
+}
+header nav.main_nav ul li.logo a.logo:hover {
+  opacity: 1;
 }
 header nav.main_nav ul li {
   padding: 5px 0;

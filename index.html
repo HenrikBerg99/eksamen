@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
+    <meta name="description" content="Velkommen til min nye og fantastiske eksamensside hvor jeg viser frem mine ferdigheter.">
     <title>Hjem</title>
 </head>
     <body>
@@ -21,7 +22,7 @@
                     <ul>
                         <li><a href="index.html">Hjem</a></li>
                         <li><a href="product.html">Produkter</a></li>
-                        <a class="logo" href="index.html"><span class="logo">Logo</span></a>
+                        <li class="logo"><a class="logo" href="index.html">Logo</a></li>
                         <li><a href="index.html#popular_categories">Kategorier</a></li>
                         <li><a href="#">Kontakt oss</a></li>
                     </ul>
@@ -85,136 +86,158 @@
                     </article>
                     
                     <section class="products_container" id="popular_products">
-                        <article class="product">
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
                             <picture>
                                 <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                                 <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
-                                <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                             </picture>
                             <a href="product.html">
                             <article class="product_info">
-                                <h3>Coca-cola Zero</h3>
-                                <p>Kr 1 999</p>
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
                             </article>
                             </a>
-                            <ul class="product_rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><p><b>436 Reviews</b></li>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                             </ul>
                         </article>
-                        <article class="product">
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
                             <picture>
                                 <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                                 <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
-                                <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                             </picture>
                             <a href="product.html">
-                                <article class="product_info">
-                                    <h3>Coca-cola Zero</h3>
-                                    <p>Kr 1 999</p>
-                                </article>
-                                </a>
-                            <ul class="product_rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><p><b>436 Reviews</b></li>
+                            <article class="product_info">
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
+                            </article>
+                            </a>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                             </ul>
                         </article>
-                        <article class="product">
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
                             <picture>
                                 <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                                 <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
-                                <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                             </picture>
                             <a href="product.html">
-                                <article class="product_info">
-                                    <h3>Coca-cola Zero</h3>
-                                    <p>Kr 1 999</p>
-                                </article>
-                                </a>
-                            <ul class="product_rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><p><b>436 Reviews</b></li>
+                            <article class="product_info">
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
+                            </article>
+                            </a>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                             </ul>
                         </article>
-                        <article class="product">
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
                             <picture>
                                 <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                                 <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
-                                <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                             </picture>
                             <a href="product.html">
-                                <article class="product_info">
-                                    <h3>Coca-cola Zero</h3>
-                                    <p>Kr 1 999</p>
-                                </article>
-                                </a>
-                            <ul class="product_rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><p><b>436 Reviews</b></li>
+                            <article class="product_info">
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
+                            </article>
+                            </a>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                             </ul>
                         </article>
-                        <article class="product">
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
                             <picture>
                                 <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                                 <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
-                                <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                             </picture>
                             <a href="product.html">
-                                <article class="product_info">
-                                    <h3>Coca-cola Zero</h3>
-                                    <p>Kr 1 999</p>
-                                </article>
-                                </a>
-                            <ul class="product_rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><p><b>436 Reviews</b></li>
+                            <article class="product_info">
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
+                            </article>
+                            </a>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                             </ul>
                         </article>
-                        <article class="product">
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
                             <picture>
                                 <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                                 <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                                 <img src="images/product_img_small.jpg" alt="Produktbilde">
-                                <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                             </picture>
                             <a href="product.html">
-                                <article class="product_info">
-                                    <h3>Coca-cola Zero</h3>
-                                    <p>Kr 1 999</p>
-                                </article>
-                                </a>
-                            <ul class="product_rating">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><p><b>436 Reviews</b></li>
+                            <article class="product_info">
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
+                            </article>
+                            </a>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
+                            </ul>
+                        </article>
+                        <article class="product" itemscope itemtype="http://schema.org/Product">
+                            <picture>
+                                <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
+                                <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
+                                <img src="images/product_img_small.jpg" alt="Produktbilde">
+                                <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
+                            </picture>
+                            <a href="product.html">
+                            <article class="product_info">
+                                <h3 itemprop="name">Produktnavn</h3>
+                                <p itemprop="price">Kr 1 999</p>
+                            </article>
+                            </a>
+                            <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                             </ul>
                         </article>
                     </section>
@@ -227,45 +250,45 @@
                         <p>Oppdag det beste av det beste</p>
                     </article>
                     <section class="grid_container">
-                        <article class="cat_container" id="cat1">
+                        <article class="cat_container" id="cat1" itemscope itemtype="http://schema.org/Category">
                             <picture>
                                 <source srcset="images/cat1_small.jpg" media="(min-width: 800px)">
                                 <source srcset="images/cat1_big.jpg" media="(min-width: 400px)">
                                 <img src="images/cat1_small.jpg" alt="Kategori bilder, kategori 1">
                             </picture>
-                            <h3>Category 1</h3>
+                            <h3 itemprop="name">>Category 1</h3>
                         </article>
-                        <article class="cat_container" id="cat2">
+                        <article class="cat_container" id="cat2" itemscope itemtype="http://schema.org/Category">
                             <picture>
                                 <source srcset="images/cat2_small.jpg" media="(min-width: 800px)">
                                 <source srcset="images/cat2_big.jpg" media="(min-width: 400px)">
                                 <img src="images/cat2_small.jpg" alt="Kategori bilder, kategori 2">
                             </picture>
-                            <h3>Category 2</h3>
+                            <h3 itemprop="name">>Category 2</h3>
                         </article>
-                        <article class="cat_container" id="cat3">
+                        <article class="cat_container" id="cat3" itemscope itemtype="http://schema.org/Category">
                             <picture>
                                 <source srcset="images/cat3_small.jpg" media="(min-width: 800px)">
                                 <source srcset="images/cat3_big.jpg" media="(min-width: 400px)">
                                 <img src="images/cat3_small.jpg" alt="Kategori bilder, kategori 3">
                             </picture>
-                            <h3>Category 3</h3>
+                            <h3 itemprop="name">>Category 3</h3>
                         </article>
-                        <article class="cat_container" id="cat4">
+                        <article class="cat_container" id="cat4" itemscope itemtype="http://schema.org/Category">
                             <picture>
                                 <source srcset="images/cat4_small.jpg" media="(min-width: 800px)">
                                 <source srcset="images/cat4_big.jpg" media="(min-width: 400px)">
                                 <img src="images/cat4_small.jpg" alt="Kategori bilder, kategori 4">
                             </picture>
-                            <h3>Category 4</h3>
+                            <h3 itemprop="name">>Category 4</h3>
                         </article>
-                        <article class="cat_container" id="cat5">
+                        <article class="cat_container" id="cat5" itemscope itemtype="http://schema.org/Category">
                             <picture>
                                 <source srcset="images/cat5_small.jpg" media="(min-width: 800px)">
                                 <source srcset="images/cat5_big.jpg" media="(min-width: 400px)">
                                 <img src="images/cat5_small.jpg" alt="Kategori bilder, kategori 5">
                             </picture>
-                            <h3>Category 5</h3>
+                            <h3 itemprop="name">>Category 5</h3>
                         </article>
                     </section>
                 </section>
@@ -273,65 +296,63 @@
                 <section class="reviews">
                     <h1>Anmeldelser</h1>
                     <section class="reviews_container">
-                        <article class="container">
+                        <article class="container" itemscope itemtype="http://schema.org/Review">
                             <img src="images/profile_image.jpg" alt="">
                             <h3>Ola Nordman</h3>
                             <ul class="stars">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
                             </ul>
-                            <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
+                            <p itemprop="reviewBody">Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
                         </article>
-                        <article class="container">
+                        <article class="container" itemscope itemtype="http://schema.org/Review">
                             <img src="images/profile_image.jpg" alt="">
                             <h3>Ola Nordman</h3>
                             <ul class="stars">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
                             </ul>
-                            <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
-                        </article>
-                        <article class="container">
+                            <p itemprop="reviewBody">Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
+                        </article>                        <article class="container" itemscope itemtype="http://schema.org/Review">
                             <img src="images/profile_image.jpg" alt="">
                             <h3>Ola Nordman</h3>
                             <ul class="stars">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
                             </ul>
-                            <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
-                        </article>
-                        <article class="container">
+                            <p itemprop="reviewBody">Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
+                        </article>                        <article class="container" itemscope itemtype="http://schema.org/Review">
                             <img src="images/profile_image.jpg" alt="">
                             <h3>Ola Nordman</h3>
                             <ul class="stars">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
                             </ul>
-                            <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
-                        </article>
-                        <article class="container">
+                            <p itemprop="reviewBody">Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
+                        </article>                        
+                        <article class="container" itemscope itemtype="http://schema.org/Review">
                             <img src="images/profile_image.jpg" alt="">
                             <h3>Ola Nordman</h3>
                             <ul class="stars">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
-                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
                             </ul>
-                            <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
+                            <p itemprop="reviewBody">Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism, shoreditch blog iPhone jianbing. Readymade health goth distillery, DIY man braid blue bottle small batch fashion axe dreamcatcher.</p>
                         </article>
                     </section>
                 </section>

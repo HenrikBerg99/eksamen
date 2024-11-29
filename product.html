@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
-    <title>Hjem</title>
+    <meta name="description" content="Velkommen til min nye og fantastiske eksamensside hvor jeg viser frem mine ferdigheter.">
+    <title>Produkter</title>
 </head>
 <body>
     <div id="wrapper">
@@ -21,7 +22,7 @@
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="product.html">Produkter</a></li>
-                    <a class="logo" href="index.html"><span class="logo">Logo</span></a>
+                    <li class="logo"><a class="logo" href="index.html">Logo</a></li>
                     <li><a href="index.html#popular_categories">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
                 </ul>
@@ -34,44 +35,44 @@
         </header>
 
         <main class="product_main">
-            <nav aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <ul class="breadcrumbs">
-                    <li class="item"><a href="index.html">Hjem</a><i class="fa-solid fa-angle-right"></i></li>
-                    <li class="item"><a href="index.html#popular_categories">Kategori</a><i class="fa-solid fa-angle-right"></i></li>
-                    <li class="item"><a href="#"><b>Produktnavn</b></a></li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="item"><a href="index.html">Hjem</a><i class="fa-solid fa-angle-right"></i></li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="item"><a href="index.html#popular_categories">Kategori</a><i class="fa-solid fa-angle-right"></i></li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="item"><a href="#"><b>Produktnavn</b></a></li>
                 </ul>
             </nav>
 
             <section class="product_container">
-                <article class="product_image_grid">
-                    <picture id="img1">
+                <article class="product_image_grid" itemscope itemtype="http://schema.org/ImageGallery">
+                    <picture id="img1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                         <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                         <img src="images/product_img_small.jpg" alt="Produktbilde">
                     </picture>
-                    <picture id="img2">
+                    <picture id="img2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                         <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                         <img src="images/product_img_small.jpg" alt="Produktbilde">
                     </picture>
-                    <picture id="img3">
+                    <picture id="img3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                         <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                         <img src="images/product_img_small.jpg" alt="Produktbilde">
                     </picture>
-                    <picture id="img4">
+                    <picture id="img4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                         <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                         <img src="images/product_img_small.jpg" alt="Produktbilde">
                     </picture>
                 </article>
-                <article class="product_info">
-                    <h2 class="product_title">Produktnavn</h2>
-                    <a class="product_brand" href="#">Merkenavn</a>
-                    <p class="product_price">1 999 Kr inkl .mva.</p>
-                    <p class="product_color">Farge: <b>Rød</b></p>
+                <article class="product_info" itemscope itemtype="http://schema.org/Product">
+                    <h2 class="product_title" itemprop="name">Produktnavn</h2>
+                    <a itemprop="creator" itemscope itemtype="https://schema.org/Organization" class="product_brand" href="#">Merkenavn</a>
+                    <p class="product_price" itemprop="price">1 999 Kr inkl .mva.</p>
+                    <p class="product_color" itemprop="color">Farge: <b>Rød</b></p>
 
-                    <form class="user_options">
+                    <form class="user_options" aria-label="User options">
                         <select>
                             <option disabled selected>Velg en størelse</option>
                             <option value="XS">XS</option>
@@ -88,9 +89,9 @@
                             <summary><b>Matriale og vedlikehold</b><i class="fa-solid fa-plus"></i></summary>
                             <article class="content">
                                 <ul>
-                                    <li>Overmateriale: 95% viskose, 5% elastan</li>
-                                    <li>Materiale ermer: 100% polyester</li>
-                                    <li>Materiale: Jersy</li>
+                                    <li itemprop="material">Overmateriale: 95% viskose, 5% elastan</li>
+                                    <li itemprop="material">Materiale ermer: 100% polyester</li>
+                                    <li itemprop="material">Materiale: Jersy</li>
                                 </ul>
                             </article>
                         </details>
@@ -171,24 +172,24 @@
                         <details>
                             <summary>
                                 <b>Anmeldelser</b>
-                                <article class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
+                                <article class="stars" itemscope itemtype="http://schema.org/Review">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
                                     <p>32</p>
                                 </article>
                             </summary>
-                            <article class="content reviews">
+                            <article class="content reviews" itemscope itemtype="http://schema.org/Review">
                                 <p class="name">Ola nordman</p>
                                 <p class="date">2024-10-02</p>
                                 <article class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
                                 </article>
                                 <p>Kogi intelligentsia live-edge schlitz gentrify you probably haven't heard of them marxism.</p>
                             </article>
@@ -203,114 +204,114 @@
                     <a href="index.html#popular_products">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
                 <section class="products">
-                    <article class="product">
+                    <article class="product" itemscope itemtype="http://schema.org/Product">
                         <picture>
                             <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                             <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                             <img src="images/product_img_small.jpg" alt="Produktbilde">
-                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                            <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                         </picture>
                         <a href="product.html">
                         <article class="product_info">
-                            <h3>Coca-cola Zero</h3>
-                            <p>Kr 1 999</p>
+                            <h3 itemprop="name">Produktnavn</h3>
+                            <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><p><b>436 Reviews</b></li>
+                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                         </ul>
                     </article>
-                    <article class="product">
+                    <article class="product" itemscope itemtype="http://schema.org/Product">
                         <picture>
                             <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                             <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                             <img src="images/product_img_small.jpg" alt="Produktbilde">
-                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                            <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                         </picture>
                         <a href="product.html">
                         <article class="product_info">
-                            <h3>Coca-cola Zero</h3>
-                            <p>Kr 1 999</p>
+                            <h3 itemprop="name">Produktnavn</h3>
+                            <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><p><b>436 Reviews</b></li>
+                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                         </ul>
                     </article>
-                    <article class="product">
+                    <article class="product" itemscope itemtype="http://schema.org/Product">
                         <picture>
                             <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                             <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                             <img src="images/product_img_small.jpg" alt="Produktbilde">
-                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                            <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                         </picture>
                         <a href="product.html">
                         <article class="product_info">
-                            <h3>Coca-cola Zero</h3>
-                            <p>Kr 1 999</p>
+                            <h3 itemprop="name">Produktnavn</h3>
+                            <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><p><b>436 Reviews</b></li>
+                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                         </ul>
                     </article>
-                    <article class="product">
+                    <article class="product" itemscope itemtype="http://schema.org/Product">
                         <picture>
                             <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                             <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                             <img src="images/product_img_small.jpg" alt="Produktbilde">
-                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                            <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                         </picture>
                         <a href="product.html">
                         <article class="product_info">
-                            <h3>Coca-cola Zero</h3>
-                            <p>Kr 1 999</p>
+                            <h3 itemprop="name">Produktnavn</h3>
+                            <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><p><b>436 Reviews</b></li>
+                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                         </ul>
                     </article>
-                    <article class="product">
+                    <article class="product" itemscope itemtype="http://schema.org/Product">
                         <picture>
                             <source srcset="images/product_img_big.jpg" media="(min-width: 800px)">
                             <source srcset="images/product_img_small.jpg" media="(min-width: 400px)">
                             <img src="images/product_img_small.jpg" alt="Produktbilde">
-                            <span class="like_btn"><i class="fa-regular fa-heart"></i></span>
+                            <article class="like_btn"><i class="fa-regular fa-heart"></i></article>
                         </picture>
                         <a href="product.html">
                         <article class="product_info">
-                            <h3>Coca-cola Zero</h3>
-                            <p>Kr 1 999</p>
+                            <h3 itemprop="name">Produktnavn</h3>
+                            <p itemprop="price">Kr 1 999</p>
                         </article>
                         </a>
-                        <ul class="product_rating">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><p><b>436 Reviews</b></li>
+                        <ul class="product_rating" class="product_rating" aria-label="Product rating">
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa-regular fa-star" aria-hidden="true"></i></li>
+                            <li><p><b itemprop="reviewCount">436 Reviews</b></li>
                         </ul>
                     </article>
                 </section>

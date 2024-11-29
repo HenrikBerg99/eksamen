@@ -83,15 +83,20 @@ header {
             display: flex;
             flex-flow: column;
 
-            a.logo {
+            li.logo {
                 text-decoration: none;
-                padding: 1rem 0;
-                display: block;
 
-                span.logo {
+                a.logo {
+                    text-decoration: none;
+                    padding: 1rem 0;
+                    display: block;
                     font-size: 40px;
                     font-weight: 800;
                     color: variables.$text_black;
+
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
 
