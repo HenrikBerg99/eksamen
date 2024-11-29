@@ -134,6 +134,7 @@ main.index_main {
     section.banner_slider {
         @include mixins.section_setup();
         display: flex;
+        position: relative;
         overflow: hidden;
 
         article.slide {
@@ -709,6 +710,11 @@ main.product_main {
 
 main.checkout_main {
 
+    h1.page_header {
+        @include mixins.header_style();
+        text-align: center;
+    }
+
     // -----------------------------------------
     //     checkout.html - Shopping Bag
     // -----------------------------------------
@@ -803,6 +809,10 @@ main.checkout_main {
 
         form.details {
             @include mixins.form_checkout();
+
+            h3 {
+                width: 100%;
+            }
         }
 
     }
@@ -879,6 +889,9 @@ main.checkout_main {
                 article.checkbox {
                     width: 100%;
 
+                    input, label {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -984,6 +997,30 @@ footer {
             gap: 1rem;
         }
     }
+
+    // -----------------------------------------
+    //      Index - Banner slider
+    // -----------------------------------------
+
+    main.index_main section.banner_slider {
+        overflow: auto;
+        overflow-y: hidden;
+        padding-bottom: 0;
+        gap: 1rem;
+
+        article.slide {
+            height: 500px;
+            
+            article.slider_info {
+                padding: 5rem;
+            }
+        }
+
+        article#reverse {
+            justify-content: start;
+            text-align: left;
+        }
+    }
     
     // -----------------------------------------
     //      Index - Populære proudkter
@@ -1033,6 +1070,25 @@ footer {
         }
     }
 
+    // -----------------------------------------
+    //     Handlekurv
+    // -----------------------------------------
+
+    main.checkout_main section.shopping_bag,
+    main.checkout_main section.user_details, 
+    main.checkout_main section.deliver_details, 
+    main.checkout_main section.payment_details {
+        padding: 0 7rem;
+
+    }
+
+    main.checkout_main section.user_details form.details fieldset.split {
+        width: calc(50% - 10px);
+    }
+
+    main.checkout_main section.payment_details form.payment fieldset.split {
+        width: calc(50% - 10px);
+    }
     
 }
 
@@ -1076,6 +1132,18 @@ footer {
         "cat1 cat2 cat3"
         "cat4 cat4 cat3"
         "cat4 cat4 cat5"
+    }
+
+    // -----------------------------------------
+    //     Handlekurv
+    // -----------------------------------------
+
+    main.checkout_main section.shopping_bag,
+    main.checkout_main section.user_details, 
+    main.checkout_main section.deliver_details, 
+    main.checkout_main section.payment_details {
+        padding: 0 20rem;
+
     }
 
 }

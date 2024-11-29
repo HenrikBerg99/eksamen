@@ -103,6 +103,7 @@ main.index_main section.banner_slider {
   height: auto;
   padding: 2rem 0;
   display: flex;
+  position: relative;
   overflow: hidden;
 }
 main.index_main section.banner_slider article.slide {
@@ -619,6 +620,12 @@ main.product_main section.similar_products section.products article.product ul.p
   gap: 5px;
 }
 
+main.checkout_main h1.page_header {
+  font-size: 34px;
+  color: #272727;
+  padding: 2rem 0;
+  text-align: center;
+}
 main.checkout_main section.shopping_bag {
   margin: 2rem 0;
   width: 100%;
@@ -743,6 +750,9 @@ main.checkout_main section.user_details form.details a {
   display: block;
   text-align: center;
 }
+main.checkout_main section.user_details form.details h3 {
+  width: 100%;
+}
 main.checkout_main section.deliver_details {
   margin: 2rem 0;
   width: 100%;
@@ -838,6 +848,9 @@ main.checkout_main section.payment_details form.payment article.last_info p.elua
 main.checkout_main section.payment_details form.payment article.last_info article.checkbox {
   width: 100%;
 }
+main.checkout_main section.payment_details form.payment article.last_info article.checkbox input, main.checkout_main section.payment_details form.payment article.last_info article.checkbox label {
+  cursor: pointer;
+}
 
 footer {
   width: 100%;
@@ -910,6 +923,22 @@ footer section.footer_info article.sub_container nav.soc_icons a:hover {
     align-items: center;
     gap: 1rem;
   }
+  main.index_main section.banner_slider {
+    overflow: auto;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    gap: 1rem;
+  }
+  main.index_main section.banner_slider article.slide {
+    height: 500px;
+  }
+  main.index_main section.banner_slider article.slide article.slider_info {
+    padding: 5rem;
+  }
+  main.index_main section.banner_slider article#reverse {
+    justify-content: start;
+    text-align: left;
+  }
   main.index_main section.popular_products .products_container {
     flex-flow: wrap;
   }
@@ -935,6 +964,18 @@ footer section.footer_info article.sub_container nav.soc_icons a:hover {
   main.product_main section.product_container article.product_info {
     width: 35%;
   }
+  main.checkout_main section.shopping_bag,
+  main.checkout_main section.user_details,
+  main.checkout_main section.deliver_details,
+  main.checkout_main section.payment_details {
+    padding: 0 7rem;
+  }
+  main.checkout_main section.user_details form.details fieldset.split {
+    width: calc(50% - 10px);
+  }
+  main.checkout_main section.payment_details form.payment fieldset.split {
+    width: calc(50% - 10px);
+  }
 }
 @media only screen and (min-width: 1200px) {
   #wrapper {
@@ -951,5 +992,11 @@ footer section.footer_info article.sub_container nav.soc_icons a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 250px 250px 250px;
     grid-template-areas: "cat1 cat2 cat3" "cat4 cat4 cat3" "cat4 cat4 cat5";
+  }
+  main.checkout_main section.shopping_bag,
+  main.checkout_main section.user_details,
+  main.checkout_main section.deliver_details,
+  main.checkout_main section.payment_details {
+    padding: 0 20rem;
   }
 }/*# sourceMappingURL=main.css.map */
